@@ -8,7 +8,22 @@ import { meny } from "./data";
 // d) skriv ut platsen för "Latte" (indexOf) och om "Cola" finns (includes).
 // e) skriv ut hela listan som en text: drycker.join(", ")
 // TODO
+// a) skapa const drycker: string[] = ["Bryggkaffe", "Latte", "Te"];
+const drycker: string[] = ["Bryggkaffe", "Latte", "Te"];
 
+// b) lägg till "Chai" sist med push. Skriv ut listan och längden.
+drycker.push("Chai");
+console.log(drycker);
+console.log(drycker.length);
+// c) ta bort sista med pop och skriv ut vad som togs bort.
+const bortTagenElement = drycker.pop();
+console.log(bortTagenElement);
+console.log(drycker);
+// d) skriv ut platsen för "Latte" (indexOf) och om "Cola" finns (includes).
+console.log(drycker.indexOf("Latte"));
+console.log(drycker.includes("cola"));
+// e) skriv ut hela listan som en text: drycker.join(", ")
+console.log(drycker.join(" , "));
 
 // UPPGIFT 2: objekt
 // a) skapa const kopp = { namn: "Latte", pris: 45, vegetarisk: true };
@@ -18,7 +33,14 @@ import { meny } from "./data";
 // d) skriv ut Object.keys(kopp)
 // TODO
 
-
+// a) skapa const kopp = { namn: "Latte", pris: 45, vegetarisk: true };
+const kopp = { 
+    namn: "Latte", 
+    pris: 45, 
+    vegetarisk: true 
+};
+// b) skriv ut kopp.namn och kopp["pris"]
+    console.log(kopp.namn);
 // UPPGIFT 3: arrayer av objekt
 // a) skriv ut hur många rätter menyn har och namnet på den första
 // b) loopa med for...of och skriv ut "namn – pris kr" för varje rätt

@@ -57,7 +57,6 @@ kopp.storlek = "stor";
 // d) skriv ut Object.keys(kopp)
 console.log(Object.keys(kopp));
 
-
 // UPPGIFT 3: arrayer av objekt
 // a) skriv ut hur många rätter menyn har och namnet på den första
 // b) loopa med for...of och skriv ut "namn – pris kr" för varje rätt

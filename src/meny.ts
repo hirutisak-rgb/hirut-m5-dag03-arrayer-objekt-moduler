@@ -16,7 +16,7 @@ export function vegetariskaRatter(meny: Ratt[]): Ratt[] {
 export function rattNamn(meny: Ratt[]): string[] {
   // TODO
     const _name: Ratt[] = [];
-    return _name[""];
+    return _name;
 }
 
 // 3. En prislista som text: "Kardemummabulle – 35 kr" (map + formateraPris)

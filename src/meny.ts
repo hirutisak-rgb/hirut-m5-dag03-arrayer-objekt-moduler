@@ -78,4 +78,5 @@ export function perKategori(meny: Ratt[]): Record<string, number> {
 // 9. En kopia av rätten med nytt pris. Originalet får INTE ändras (spread: { ...ratt }).
 export function medNyttPris(ratt: Ratt, nyttPris: number): Ratt {
   // TODO
+    return { ...ratt, pris: nyttPris };
 }

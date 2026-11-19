@@ -27,6 +27,7 @@ export function prislista(meny: Ratt[]): string[] {
 // 4. Hitta en rätt via id (find). Returnerar objektet, eller undefined om det saknas.
 export function hittaRatt(meny: Ratt[], id: number): Ratt | undefined {
   // TODO
+  return meny.find((ratt) => ratt.id === id);
 }
 
 // 5. Den billigaste rätten (reduce). Returnerar objektet. Tom lista ger undefined.
@@ -38,6 +39,7 @@ export function billigast(meny: Ratt[]): Ratt | undefined {
 //    Den ursprungliga listan får INTE ändras (sort ändrar originalet, så kopiera först).
 export function sorteraEfterPris(meny: Ratt[]): Ratt[] {
   // TODO
+  
 }
 
 // 7. Totalpris för en order. order = [{ id: 1, antal: 2 }, { id: 5, antal: 1 }]

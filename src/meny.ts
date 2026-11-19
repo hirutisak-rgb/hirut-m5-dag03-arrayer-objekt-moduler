@@ -7,8 +7,7 @@ import type { Ratt, OrderRad } from "./typer";
 // 1. Alla vegetariska rätter (filter). Returnerar en ny array.
 export function vegetariskaRatter(meny: Ratt[]): Ratt[] {
   // TODO
-  const _ratt: Ratt[] = [];
-
+  const _ratt = meny.filter((ratt) => ratt.vegetarisk);
   return _ratt;
 }
 

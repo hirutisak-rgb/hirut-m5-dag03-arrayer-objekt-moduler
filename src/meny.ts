@@ -33,6 +33,17 @@ export function hittaRatt(meny: Ratt[], id: number): Ratt | undefined {
 // 5. Den billigaste rätten (reduce). Returnerar objektet. Tom lista ger undefined.
 export function billigast(meny: Ratt[]): Ratt | undefined {
   // TODO
+  if(meny.length === 0){
+    return undefined;
+  }
+
+  const minsta = meny.reduce((lagst, nasta) => {
+  if (nasta.pris< lagst.pris) {
+    return nasta;      // nästa var mindre – det är nya "lägst"
+  }
+  return lagst;
+}, meny[0]);
+    return minsta;  
 }
 
 // 6. Sortera efter pris, billigast först. Returnerar en NY array.

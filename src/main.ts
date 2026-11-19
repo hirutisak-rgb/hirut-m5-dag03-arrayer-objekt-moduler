@@ -11,6 +11,12 @@ import { meny } from "./data";
 
 // a) skapa const drycker: string[] = ["Bryggkaffe", "Latte", "Te"];
 const drycker: string[] = ["Bryggkaffe", "Latte", "Te"];
+console.log(drycker[0]);        //"Bryggkaffe"
+console.log(drycker[1]);        //"Latte"
+console.log(drycker.length)     //3
+console.log(drycker[3]);        //Undefined¨
+
+//drycker[1] = "Cappuccino";
 
 // b) lägg till "Chai" sist med push. Skriv ut listan och längden.
 drycker.push("Chai");
@@ -62,3 +68,13 @@ console.log(Object.keys(kopp));
 // b) loopa med for...of och skriv ut "namn – pris kr" för varje rätt
 // c) skriv ut namnet på den sista rätten utan att veta antalet (tips: length - 1)
 // TODO
+// a) skriv ut hur många rätter menyn har och namnet på den första
+console.log(meny.length);
+console.log(meny[0].namn);
+// b) loopa med for...of och skriv ut "namn – pris kr" för varje rätt
+for(const ratt of meny){
+    console.log(ratt.namn + " - " + ratt.pris + " kr");
+}
+
+// c) skriv ut namnet på den sista rätten utan att veta antalet (tips: length - 1)
+console.log(meny[(meny.length -1)].namn);

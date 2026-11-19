@@ -14,13 +14,14 @@ export function vegetariskaRatter(meny: Ratt[]): Ratt[] {
 // 2. Bara namnen, som en array av text (map). ["Kardemummabulle", ...]
 export function rattNamn(meny: Ratt[]): string[] {
   // TODO
-    const _name: Ratt[] = [];
-    return _name;
+  const _name = meny.map((ratt) => ratt.namn);
+  return _name;
 }
 
 // 3. En prislista som text: "Kardemummabulle – 35 kr" (map + formateraPris)
 export function prislista(meny: Ratt[]): string[] {
   // TODO
+   return meny.map((ratt) => `${ratt.namn} – ${formateraPris(ratt.pris)}`);
 }
 
 // 4. Hitta en rätt via id (find). Returnerar objektet, eller undefined om det saknas.
